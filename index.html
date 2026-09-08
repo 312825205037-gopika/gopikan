@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Student Performance Analysis</h1>
+        <p>Student Academic Performance Evaluation System</p>
+    </div>
+
+    <form action="analyze" method="post">
+
+        <h2>Student Information</h2>
+
+        <label>Student Name</label>
+        <input type="text"
+               name="studentName"
+               placeholder="Enter student name"
+               required>
+
+        <label>Roll Number</label>
+        <input type="text"
+               name="rollNumber"
+               placeholder="Enter roll number"
+               required>
+
+        <h2>Subject Marks</h2>
+
+        <div class="subjects">
+
+            <div>
+                <label>English</label>
+                <input type="number"
+                       name="english"
+                       min="0"
+                       max="100"
+                       required>
+            </div>
+
+            <div>
+                <label>Mathematics</label>
+                <input type="number"
+                       name="mathematics"
+                       min="0"
+                       max="100"
+                       required>
+            </div>
+
+            <div>
+                <label>Science</label>
+                <input type="number"
+                       name="science"
+                       min="0"
+                       max="100"
+                       required>
+            </div>
+
+            <div>
+                <label>Computer Science</label>
+                <input type="number"
+                       name="computer"
+                       min="0"
+                       max="100"
+                       required>
+            </div>
+
+            <div>
+                <label>Social Science</label>
+                <input type="number"
+                       name="socialScience"
+                       min="0"
+                       max="100"
+                       required>
+            </div>
+
+        </div>
+
+        <label>Attendance Percentage</label>
+
+        <input type="number"
+               name="attendance"
+               min="0"
+               max="100"
+               step="0.1"
+               placeholder="Enter attendance percentage"
+               required>
+
+        <button type="submit">
+            Analyze Performance
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
